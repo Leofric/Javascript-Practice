@@ -1,0 +1,68 @@
+//Part 1
+let vacationSpots = ['a', 'b', 'c'];
+console.log(vacationSpots[0]);
+console.log(vacationSpots[1]);
+console.log(vacationSpots[2]);
+
+//Part 2
+for(let counter = 5; counter < 11; counter++){
+  console.log(counter);
+}
+
+//Part 3
+for (let counter = 3; counter >= 0; counter--){
+  console.log(counter);
+}
+
+//Part 4
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+for(let i = 0; i < vacationSpots.length; i++){
+  console.log('I would love to visit '+vacationSpots[i]);
+}
+
+//Part 5
+let bobsFollowers = ['mike', 'tina', 'tim', 'eugine'];
+
+let tinasFollowers = ['bob', 'tim', 'eugine'];
+
+let mutualFollowers = [];
+
+for(let i = 0; i<bobsFollowers.length; i++){
+  for(let j = 0; j<tinasFollowers.length; j++){
+    if(bobsFollowers[i] === tinasFollowers[j]){
+      mutualFollowers.push(bobsFollowers[i]);
+    }
+  }
+}
+
+//Part 6
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+let currentCard;
+
+while(cards[currentCard] != 'spade'){
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+}
+
+//Part 7
+let cupsOfSugarNeeded = 5;
+let cupsAdded = 0;
+
+do{
+  cupsAdded++;
+}
+while(cupsOfSugarNeeded > cupsAdded){
+  cupsAdded++;
+}
+
+//Part 8
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+for(let i = 0; i < rapperArray.length; i++){
+  console.log(rapperArray[i]);
+  if(rapperArray[i] === "Notorious B.I.G."){
+    break;
+  }
+}
